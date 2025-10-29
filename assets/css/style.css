@@ -3685,7 +3685,7 @@ a:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .repowerTextWrap {
@@ -3703,6 +3703,23 @@ a:hover {
 
 .repowerHeadingWrap {
     margin-bottom: 64px;
+}
+
+.repowerSpecialsContentWrap {
+    max-width: 600px;
+    margin: 16px auto 0 auto;
+    text-align: center;
+}
+
+.repowerSpecialsTitle {
+    color: var(--Black);
+    text-align: center;
+    font-family: "SF Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 32px;
+    letter-spacing: -0.48px;
 }
 
 /* repower page ends starts here */
