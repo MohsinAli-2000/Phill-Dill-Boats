@@ -1450,19 +1450,28 @@ a:hover {
 }
 
 .newsLetterFormWrapper .formField {
-    width: 380px;
-}
-
-.formField {
     border: none;
     outline: none;
-    width: 100%;
+    width: 380px;
     color: var(--Black, #000);
     font-family: "DM Sans";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    background-color: #fff;
+}
+
+.formField {
+    border: none;
+    outline: none;
+    width: 100%;
+    color: var(--Black);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
     background-color: #fff;
 }
 
@@ -2856,13 +2865,14 @@ a:hover {
 }
 
 .formInnerHeading {
-    color: var(--Black);
-    font-family: Lexend;
+    color: var(--Navy);
+    font-family: "SF Pro";
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 590;
     line-height: 24px;
-    margin: 28px 0 40px 0;
+    letter-spacing: 0.72px;
+    margin: 40px 0 24px 0;
 }
 
 .customMarginForFormField {
