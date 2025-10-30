@@ -4087,6 +4087,34 @@ a:hover {
 
 /* event detial page css ends here */
 
+/* no event page css starts here */
+.noEventCardSection{
+    margin-bottom: 120px;
+}
+
+.noEventCard {
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    background: #FAFAFA;
+    padding: 96px 15px;
+    text-align: center;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.noEventCardTitle {
+    color: var(--Navy);
+    text-align: center;
+    font-family: "SF Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    opacity: 0.4;
+}
+
+/* no event page css ends here */
+
 @media(max-width: 1700px) {
     .desktopHeader {
         padding: 20px 40px 21px 40px;
