@@ -4011,26 +4011,16 @@ a:hover {
 /* event listing page css ends here */
 
 /* event detial page css starts here */
-.eventBoldText {
-    color: var(--Black);
-    font-family: Lexend;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-}
-
 .eventDateTimeInfoWrapper {
     margin-top: 64px;
+    max-width: 594px;
 }
 
 .eventInfoCard {
     margin: 0 12px;
     background-color: #FAFAFA;
     border: 1px solid #EEE;
-    padding: 28px 20px 16px 20px;
-    height: 100%;
+    padding: 28px 20px 36px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4042,13 +4032,14 @@ a:hover {
 }
 
 .eventDetailDatePara {
-    color: var(--Black);
+    color: var(--Black, #000);
     text-align: center;
-    font-family: Lexend;
-    font-size: 24px;
+    font-family: "SF Pro";
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
+    font-weight: 590;
+    line-height: 24px;
+    letter-spacing: -0.72px;
 }
 
 .eventDetailImageWrap {
@@ -4074,13 +4065,24 @@ a:hover {
 }
 
 .formTagBold {
-    color: var(--Blue-2);
+    color: var(--Red);
     text-align: center;
-    font-family: Lexend;
+    font-family: "SF Pro";
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 590;
     line-height: 24px;
+    letter-spacing: -0.72px;
+}
+
+.smallBoldHeading {
+    color: var(--Black);
+    font-family: "SF Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 24px;
+    letter-spacing: 0.72px;
 }
 
 /* event detial page css ends here */

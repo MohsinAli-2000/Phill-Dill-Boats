@@ -403,6 +403,26 @@ $(document).ready(function () {
             }
         });
     }
+
+    if ($('.eventDetailMemoriesCarousel').length) {
+        $('.eventDetailMemoriesCarousel').owlCarousel({
+            loop: true,
+            margin: 8,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1.4
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        });
+    }
     // event detail page code ends here
     // ================================++++++++++++++++++++====================
 })
