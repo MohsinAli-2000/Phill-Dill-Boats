@@ -43,25 +43,24 @@ a:hover {
     src: url('../fonts/San-Francisco-Pro-Display/SF-Pro-Display-Medium.otf');
 }
 
-/* @font-face {
-    font-family: "SF Pro";
-    src: url('../fonts/San-Francisco-Pro-Display/SF-Pro-Display-Black.otf');
-} */
+@font-face {
+    font-family: "SF Pro Light";
+    src: url('../fonts/San-Francisco-Pro-Display/SF-Pro-Display-Thin.otf');
+}
 
 .whiteBtn {
-    color: var(--White);
-    text-align: center;
-    color: var(--White, #FFF);
+    color: var(--Navy);
     text-align: center;
     font-family: "SF Pro";
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
+    text-transform: uppercase;
     letter-spacing: 1px;
     text-transform: uppercase;
     border-radius: 30px;
-    border: 2px solid #ffffff33;
+    border: 2px solid #283C5E;
     background: transparent;
     padding: 12px 26px;
     display: inline-flex;
@@ -2067,7 +2066,7 @@ a:hover {
     padding-top: 63%;
     overflow: hidden;
     margin: 0 20px;
-    border-radius: 16px;
+    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -2770,32 +2769,38 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #283C5E33;
+    background: #EEEEEE33;
+    margin: 0 20px;
 }
 
 .weBuyInnerWrap {
-    max-width: 440px;
+    max-width: 390px;
     margin: 0 auto;
     text-align: center;
+    padding: 24px 15px 64px 15px;
 }
 
 .buyStep {
-    color: var(--Blue-2);
+    color: var(--Navy);
     text-align: center;
-    font-family: Lexend;
+    font-family: "SF Pro Light";
     font-size: 80px;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 110;
     line-height: 100px;
 }
 
 .buyStepTitle {
-    color: var(--Black);
+    color: var(--Navy);
     text-align: center;
-    font-family: Lexend;
+    font-family: "SF Pro";
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 590;
     line-height: 32px;
+    letter-spacing: 0.48px;
 }
 
 .whySellHeadingWrap {
@@ -2849,17 +2854,8 @@ a:hover {
     margin: 0 20px;
 }
 
-.promiseCardTitle {
-    color: var(--Black);
-    font-family: Lexend;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-}
-
 .promiseTextInnerWrap {
-    max-width: 420px;
+    max-width: 340px;
 }
 
 .formInnerHeading {
@@ -2885,9 +2881,8 @@ a:hover {
 .fileUploadFieldWrap {
     display: flex;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 30px 0 0 30px;
     border: 1px solid #EEE;
-    background-color: #FAFAFA;
 }
 
 .uploadContainer {
