@@ -3114,6 +3114,9 @@ a:hover {
 .partsImageWrap {
     position: relative;
     padding-top: 56%;
+    max-width: 520px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .partsImageWrap img {
@@ -3133,7 +3136,7 @@ a:hover {
 }
 
 .partsTextInnerWrap {
-    max-width: 600px;
+    max-width:520px;
 }
 
 .partsSection {
