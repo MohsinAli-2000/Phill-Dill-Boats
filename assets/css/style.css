@@ -218,14 +218,12 @@ a:hover {
 
 .colorTagWhite {
     color: var(--White);
-    text-align: center;
-    font-family: "LTC Metropolitan Pro";
+    font-family: "SF Pro";
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 590;
     line-height: 32px;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
+    letter-spacing: 0.48px;
 }
 
 .largeWhiteHeading {
@@ -3737,7 +3735,7 @@ a:hover {
 /* blog listing page css starts here */
 .blogHeaderSection {
     position: relative;
-    padding-top: 23%;
+    padding-top: 37%;
     min-height: 400px;
 }
 
@@ -3763,10 +3761,10 @@ a:hover {
 
 .blogHeaderContent {
     position: absolute;
-    left: 50%;
+    left: 15%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 800px;
+    transform: translateY(-50%);
+    max-width: 720px;
     z-index: 3;
 }
 
@@ -3779,21 +3777,20 @@ a:hover {
     display: flex;
     align-items: end;
     gap: 16px;
-    border-radius: 30px;
     border: 1px solid #D9D9D9;
-    background-color: #FAFAFA;
     padding: 13px 16px;
 }
 
 .blogListingSearch {
     border: none;
     outline: none;
-    color: var(--black-color);
-    font-family: Lexend;
+    color: var(--Black, #000);
+    font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
+    opacity: 0.6;
 }
 
 .topicListContainer {
@@ -3889,7 +3886,7 @@ a:hover {
 }
 
 .blogListingCardPara {
-    color: var(--black-color);
+    color: var(--Black);
     font-family: Lexend;
     font-size: 16px;
     font-style: normal;
@@ -3925,8 +3922,388 @@ a:hover {
     line-height: 24px;
 }
 
+.blogWhitePara {
+    color: var(--White);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 
 /* blog listing page css ends here */
+
+/* blog details page css start here */
+
+.blog-details-container {
+    display: flex;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 80px;
+}
+
+.blog-main {
+    flex: 3;
+}
+
+.blog-details-image {
+    position: relative;
+    padding-top: 50%;
+}
+
+.blog-details-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-meta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.blog-meta .meta-item {
+    position: relative;
+    margin-right: 30px;
+}
+
+.meta-item+.meta-item::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 13px;
+    background-color: #22222299;
+}
+
+.blog-details-title {
+    color: var(--Navy);
+    font-family: "SF Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+}
+
+/* Blog content (rich text) */
+
+.blog-content {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.blog-content {
+    font-family: "SF Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    color: #222;
+    font-size: 16px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+    color: var(--Navy);
+    font-family: "SF Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 490;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+    margin: 20px 0 15px 0;
+}
+
+.blog-content h1 {
+    font-size: 2rem;
+}
+
+.blog-content h2 {
+    font-size: 1.75rem;
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+}
+
+.blog-content h4 {
+    font-size: 1.25rem;
+}
+
+.blog-content h5 {
+    font-size: 1.1rem;
+}
+
+.blog-content h6 {
+    font-size: 1rem;
+    color: #444;
+}
+
+.blog-content p {
+    color: var(--Black, #000);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.blog-content strong,
+.blog-content b {
+    font-weight: 600;
+    color: #000;
+    font-family: Lexend;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.blog-content a {
+    color: #0056b3;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 86, 179, 0.2);
+    transition: all 0.2s ease;
+    font-family: "SF Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.blog-content a:hover {
+    color: #003d80;
+    border-color: #003d80;
+}
+
+.blog-content ul,
+.blog-content ol {
+    margin: 1em 0 1.5em 2em;
+}
+
+.blog-content li {
+    margin-bottom: 0.5em;
+    font-family: "SF Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.blog-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2em auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-content blockquote {
+    background: #f8f9fa;
+    border-left: 4px solid #1C2B4A;
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+    font-style: italic;
+    color: #444;
+    font-family: "SF Pro";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.blog-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+}
+
+.blog-content table th,
+.blog-content table td {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    text-align: left;
+    font-family: "SF Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.blog-content table th {
+    background: #f1f3f5;
+    font-weight: 600;
+    font-family: Lexend;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.blog-content hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 2em 0;
+}
+
+.blog-content iframe,
+.blog-content video {
+    max-width: 100%;
+    border-radius: 6px;
+    margin: 1.5em 0;
+}
+
+.blog-content pre,
+.blog-content code {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: "SF Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    overflow-x: auto;
+}
+
+
+/* Sidebar */
+
+.blog-sidebar {
+    flex: 1;
+}
+
+.blog-detail-sidebar-heading {
+    color: var(--Navy);
+    font-family: "SF Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+    margin-bottom: 32px;
+}
+
+.sidebar-post {
+    margin-bottom: 20px;
+}
+
+.sidebar-thumbnail-image {
+    position: relative;
+    padding-top: 60%;
+    margin-bottom: 8px;
+}
+
+.sidebar-thumbnail-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar-title {
+    color: var(--Black);
+    font-family: "SF Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 24px;
+    letter-spacing: 0.72px;
+    margin-bottom: 40px;
+}
+
+.custom-form-control {
+    width: 100%;
+    border: 1px solid var(--Black);
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 10px;
+    border-radius: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-textarea {
+    border-radius: 2px;
+    border: 1px solid var(--Black);
+    background: transparent;
+    color: var(--Black);
+    font-family: Lexend !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 11px 19px !important;
+    height: unset !important;
+    width: 100%;
+}
+
+.sold-title {
+    color: var(--Black);
+    font-family: Lexend;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 10px 0;
+}
+
+.sold-boat-title {
+    color: var(--Black);
+    font-family: Lexend;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.backToBlogBtnWrap {
+    margin: 40px 0 0 20px;
+}
+
+.backToBlogBtn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #000;
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.subtitle {
+    color: var(--Red);
+    font-family: "SF Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+/* blog detail css ends */
 
 /* event listing page css starts here */
 .eventListingCardSection {
@@ -4088,7 +4465,7 @@ a:hover {
 /* event detial page css ends here */
 
 /* no event page css starts here */
-.noEventCardSection{
+.noEventCardSection {
     margin-bottom: 120px;
 }
 
