@@ -371,7 +371,7 @@ a:hover {
     text-transform: capitalize;
 }
 
-.centralNavLink:hover{
+.centralNavLink:hover {
     color: #283C5E;
 }
 
@@ -418,6 +418,7 @@ a:hover {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    width: 100%;
 }
 
 .desktopLogoWrap {
@@ -1048,7 +1049,7 @@ a:hover {
 
 .mobileBoatsMenuCard {
     border: 1px solid #D9D9D9;
-    background: #FAFAFA;
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2268,7 +2269,9 @@ a:hover {
     margin-bottom: 30px;
 }
 
-
+.mobileShopByTypeSection {
+    margin-bottom: 40px;
+}
 
 
 
@@ -4776,6 +4779,7 @@ a:hover {
 @media (max-width: 1200px) {
     .headerSearchWrap {
         margin-left: 0;
+        max-width: 180px;
     }
 
     .headerResourcesBox {
@@ -4787,7 +4791,7 @@ a:hover {
     }
 
     .centralNavLink {
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 0px;
     }
 
@@ -4806,11 +4810,19 @@ a:hover {
     .serviceCarousel .owl-prev {
         left: 0;
     }
+
+    .homeBrandCard {
+        gap: 44px;
+    }
+
+    .homeBrandLogosContainer {
+        gap: 40px;
+    }
 }
 
 @media (max-width: 1100px) {
     .desktopLogoWrap {
-        max-width: 100px;
+        max-width: 130px;
     }
 
     .desktopNavLinkList {
@@ -5010,6 +5022,35 @@ a:hover {
         margin-left: 5%;
     }
 
+    .headerContent {
+        left: 50%;
+        bottom: 20%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .headerBtnWrap {
+        justify-content: center;
+    }
+
+    .boatListingLinksSection {
+        margin: 48px 0 40px 0;
+    }
+
+    .boatListingLinkCardTitleWrap {
+        left: 20px;
+        top: 16px;
+    }
+
+    .boatingStyleCard {
+        height: 144px;
+    }
+
+    .newArrivalSection {
+        margin: 40px 0 64px 0;
+    }
+
 }
 
 @media(max-width: 767px) {
@@ -5025,8 +5066,12 @@ a:hover {
     }
 
     .mainHeading {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 36px;
+    }
+
+    .paraWrapper {
+        margin: 16px 0 32px 0;
     }
 
     .homeLocationTitle {
@@ -5041,6 +5086,11 @@ a:hover {
 
     .newsLetterFormWrapper .formField {
         width: 100%;
+    }
+
+    .boatListingLinkCardTitle {
+        font-size: 28px;
+        line-height: 36px;
     }
 }
 

@@ -231,6 +231,26 @@ $(document).ready(function () {
         });
     }
 
+    if ($('.shopByTypeCarousel').length) {
+        $('.shopByTypeCarousel').owlCarousel({
+            loop: true,
+            nav: false,
+            margin: 16,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1.5,
+                },
+                400: {
+                    items: 1.8,
+                },
+                440: {
+                    items: 2.3,
+                },
+            }
+        });
+    }
+
     $("#mobileLocationInfoToggler").on("click", function () {
         $(".mobileSelectStoreMenu").toggleClass("toggleClassForMobieSelectStoreMenu")
     })
