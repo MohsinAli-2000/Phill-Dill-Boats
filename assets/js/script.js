@@ -6,6 +6,7 @@ $(document).ready(function () {
         $(".boatsSalesMegaMenu, .servicesMegaMenu, .selectStoreMenu, .resourcesMegaMenu").fadeOut();
         $(".toggleBoatSalesMenu, .toggleServiceMenu").removeClass("activeNavTab");
         $(".resourcesMegaMenu").removeClass("togglerClassForResourcesMenu");
+        $(".mobileSelectStoreMenu").removeClass("toggleClassForMobieSelectStoreMenu");
         $(".resourcesIcon").attr("src", "./assets/images/mega-menus/burger-icon.webp");
         $(".mobileSearchBarWrapper").fadeOut()
     }
@@ -77,8 +78,8 @@ $(document).ready(function () {
     $(document).on("click", function (event) {
         const target = $(event.target);
         if (
-            !target.closest(".boatsSalesMegaMenu, .servicesMegaMenu, .selectStoreMenu, .resourcesMegaMenu, .mobileSearchBarWrapper").length &&
-            !target.closest(".toggleBoatSalesMenu, .toggleServiceMenu, .toggleStoreMenu, .toggleResourcesMegaMenu, .mobileSearchIconWrapper").length
+            !target.closest(".boatsSalesMegaMenu, .servicesMegaMenu, .selectStoreMenu, .resourcesMegaMenu, .mobileSearchBarWrapper, #mobileLocationInfoToggler").length &&
+            !target.closest(".toggleBoatSalesMenu, .toggleServiceMenu, .toggleStoreMenu, .toggleResourcesMegaMenu, .mobileSearchIconWrapper, .mobileSelectStoreMenu").length
         ) {
             closeAllMenus();
         }
@@ -128,7 +129,7 @@ $(document).ready(function () {
     });
 
     $(".mobileSearchIconWrapper").on("click", function () {
-        $(".mobileSearchBarWrapper").fadeToggle()
+        $(".mobileSearchBarWrapper").toggle()
     })
     // mobile nav code ends here
     // ================================++++++++++++++++++++====================

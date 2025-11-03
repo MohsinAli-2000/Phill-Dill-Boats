@@ -53,6 +53,11 @@ a:hover {
     src: url('../fonts/San-Francisco-Pro-Display/SF-Pro-Display-Semibold.otf');
 }
 
+@font-face {
+    font-family: "SF Pro Bold";
+    src: url('../fonts/San-Francisco-Pro-Display/SF-Pro-Display-Bold.otf');
+}
+
 .whiteBtn {
     color: var(--Navy);
     text-align: center;
@@ -173,6 +178,31 @@ a:hover {
 
 .blueBtn:hover {
     color: var(--White);
+}
+
+.secondaryBlueBtn {
+    color: var(--Navy);
+    text-align: center;
+    font-family: "SF Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    background-color: var(--White);
+    padding: 12px 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.4s;
+    outline: none;
+    border: 1px solid #283C5E33;
+}
+
+.secondaryBlueBtn:hover {
+    color: var(--Navy);
 }
 
 .regularBlackPara {
@@ -339,6 +369,10 @@ a:hover {
     line-height: 24px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+}
+
+.centralNavLink:hover{
+    color: #283C5E;
 }
 
 .headerSearchWrap {
@@ -770,7 +804,7 @@ a:hover {
 
 .mobileSearchBarWrapper {
     position: fixed;
-    top: 130px;
+    top: 110px;
     left: 0;
     width: 100%;
     background-color: #fff;
@@ -846,6 +880,7 @@ a:hover {
 .mobileSelectStoreMenu {
     border: 1px solid #EEE;
     background: #FFF;
+    width: 100%;
     max-width: 380px;
     padding: 15px 15px 30px 15px;
     position: absolute;
@@ -860,12 +895,13 @@ a:hover {
 }
 
 .mobileSelectedStoreTitle {
-    color: var(--Black);
-    font-family: Lexend;
+    color: var(--Navy, #283C5E);
+    font-family: "SF Pro";
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 590;
     line-height: 24px;
+    letter-spacing: 0.72px;
 }
 
 .mobileSelectStoreHeaderWrap {
@@ -971,11 +1007,11 @@ a:hover {
 }
 
 .mainMenuIconText {
-    color: var(--Blue-2);
-    font-family: Lexend;
+    color: var(--Red);
+    font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
 }
 
@@ -984,12 +1020,13 @@ a:hover {
 }
 
 .subMenuHeading {
-    color: var(--Black);
-    font-family: Lexend;
+    color: var(--Navy);
+    font-family: "SF Pro";
     font-size: 22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 590;
     line-height: 30px;
+    letter-spacing: 0.44px;
 }
 
 .subMenuLink {
@@ -998,10 +1035,10 @@ a:hover {
 
 .subMenuLinkText {
     color: var(--Black);
-    font-family: Lexend;
+    font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
 }
 
@@ -1067,16 +1104,17 @@ a:hover {
 }
 
 .mobileMenuLargeLink {
-    color: var(--Black);
-    font-family: Lexend;
+    color: var(--Navy);
+    font-family: "SF Pro";
     font-size: 22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 590;
     line-height: 30px;
+    letter-spacing: 0.44px;
 }
 
 .mobileMenuLargeLink:hover {
-    color: var(--Black);
+    color: var(--Navy);
 }
 
 .secondMobileMenuList {
@@ -1085,10 +1123,10 @@ a:hover {
 
 .mobileMenuSmallLink {
     color: var(--Black);
-    font-family: Lexend;
+    font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
 }
 
@@ -1194,7 +1232,7 @@ a:hover {
 .boatSalesMenuCrossIcon {
     position: absolute;
     top: 16px;
-    right: 16px;
+    right: 5%;
     cursor: pointer;
 }
 
@@ -1252,41 +1290,25 @@ a:hover {
 .serviceMenuCrossIcon {
     position: absolute;
     top: 16px;
-    right: 16px;
+    right: 5%;
     cursor: pointer;
 }
 
 .selectStoreMenu {
     background-color: #fff;
-    padding: 40px 60px 56px 60px;
+    padding: 40px 50px 56px 50px;
     position: fixed;
-    top: 90px;
+    top: 80px;
     right: 0;
-    max-width: 480px;
+    min-width: 420px;
     z-index: 15;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
     display: none;
 }
 
-.modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1040;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000;
-    pointer-events: none;
+.selectStoreInnerMenu {
+    text-align: center;
 }
-
-.modal-backdrop.show {
-    opacity: 0;
-}
-
-.modal {
-    z-index: 1050;
-}
-
 
 
 .selectedStoreStarPara img {
@@ -1320,25 +1342,28 @@ a:hover {
 }
 
 .selectedstoreName {
-    color: var(--Blue-1);
-    text-align: right;
-    font-family: Lexend;
-    font-size: 14px;
+    color: var(--Navy);
+    text-align: center;
+    font-family: "SF Pro";
+    font-size: 18px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 20px;
+    font-weight: 590;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
 }
 
 .selectedStoreAddress {
-    color: var(--Black);
-    font-family: Lexend;
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
     text-decoration-line: underline;
     text-decoration-style: solid;
-    text-decoration-skip-ink: none;
+    text-decoration-skip-ink: auto;
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
@@ -1346,11 +1371,18 @@ a:hover {
 
 .selectedStorePhoneNumber {
     color: var(--Black);
-    font-family: Lexend;
-    font-size: 32px;
+    text-align: center;
+    font-family: "SF Pro";
+    font-size: 24px;
     font-style: normal;
-    font-weight: 300;
-    line-height: 40px;
+    font-weight: 590;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+    margin-top: 16px;
+}
+
+.selectedStorePhoneNumber:hover {
+    color: var(--Black);
 }
 
 .selectedStoreInfoPara {
@@ -2521,6 +2553,7 @@ a:hover {
 
 .marineInsuranceMainSection {
     margin-top: -7%;
+    margin-bottom: 120px;
 }
 
 .marineInsuranceFormWrapper {
@@ -3380,6 +3413,30 @@ a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.servicePageTextWrap {
+    margin-top: 16px;
+}
+
+.redColorTag {
+    color: var(--Red);
+    font-family: "SF Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.servicePageColorText {
+    color: var(--Navy);
+    font-family: "SF Pro Bold";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 32px;
+    letter-spacing: 0.48px;
 }
 
 /* service page css ends here */
