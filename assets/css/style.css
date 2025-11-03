@@ -2412,6 +2412,21 @@ a:hover {
     object-fit: cover;
 }
 
+.marineInsuranceHeaderContent {
+    position: absolute;
+    left: 10%;
+    bottom: 40px;
+}
+
+.marineHeaderHeading {
+    color: var(--White);
+    font-family: "SF Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
 .commonHeaderContent {
     position: absolute;
     left: 50%;
@@ -2432,26 +2447,25 @@ a:hover {
 }
 
 .typicalCoverageSection {
-    margin-bottom: 80px;
+    margin-top: 40px;
 }
 
 .typicalHeading {
     color: var(--Black);
-    text-align: center;
-    font-family: Lexend;
-    font-size: 24px;
+    font-family: "SF Pro";
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
+    font-weight: 590;
+    line-height: 24px;
+    letter-spacing: 0.72px;
 }
 
 .typicalCoveragesWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 66px;
-    margin-top: 32px;
+    gap: 24px;
+    margin-top: 24px;
 }
 
 .typicalItem {
@@ -2461,8 +2475,8 @@ a:hover {
 }
 
 .tickWrap {
-    flex: 0 0 32px;
-    height: 32px;
+    flex: 0 0 24px;
+    height: 24px;
 }
 
 .tickWrap img {
@@ -2473,10 +2487,10 @@ a:hover {
 
 .typicalCoverageTitle {
     color: var(--Black);
-    font-family: Lexend;
+    font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
 }
 
@@ -2504,6 +2518,29 @@ a:hover {
     -moz-appearance: none;
     cursor: pointer;
 }
+
+.marineInsuranceMainSection {
+    margin-top: -7%;
+}
+
+.marineInsuranceFormWrapper {
+    max-width: 520px;
+    background-color: #FAFAFA;
+    border: 1px solid #D9D9D9;
+    padding: 50px 15px;
+    margin: 0 auto;
+}
+
+.marineBoldPara {
+    color: var(--Black);
+    font-family: "SF Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 24px;
+    letter-spacing: 0.72px;
+}
+
 
 /* marine insurance page css ends here */
 
@@ -3092,8 +3129,9 @@ a:hover {
     margin: 0 auto;
 }
 
-.financeTextInnerWrap{
+.financeTextInnerWrap {
     max-width: 720px;
+    margin: 0 auto;
 }
 
 /* financing page css ends here */
