@@ -2713,38 +2713,6 @@ a:hover {
 
 /* staff page css ends here */
 
-/* financing page css starts here */
-.colorBoldText {
-    color: var(--Blue-2);
-    text-align: center;
-    font-family: Lexend;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-}
-
-.financingformSection {
-    margin: 64px 0 80px 0;
-    min-height: 680px;
-    background-image: url("../images/financing/financing-bg-image.webp");
-    padding: 90px 15px;
-    position: relative;
-}
-
-.financingFormSection {
-    background-color: #fff;
-    padding: 48px 15px 62px 15px;
-    min-height: 500px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 500px;
-}
-
-/* financing page css ends here */
-
 /* about page css starts here */
 .ourMissionTextWrap {
     max-width: 360px;
@@ -3100,6 +3068,35 @@ a:hover {
 }
 
 /* contact page css ends here */
+
+/* financing page css starts here */
+.financingTextAndFormSection {
+    position: relative;
+    z-index: 2;
+    margin-top: -2%;
+    margin-bottom: 120px;
+}
+
+.financceFormWrapper {
+    max-width: 680px;
+    min-height: 520px;
+    background-color: #FAFAFA;
+    border: 1px solid #D9D9D9;
+    padding: 50px 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.financeFormInnerWrap {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.financeTextInnerWrap{
+    max-width: 720px;
+}
+
+/* financing page css ends here */
 
 /* service page css starts here */
 .serviceFeatureSection {
