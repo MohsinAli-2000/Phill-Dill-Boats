@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Phill Dill Boats — Premium Boats and Marine Services.">
+    <meta name="author" content="Phill Dill Boats">
+    <title>Specials Details | Phill Dill Boats</title>
+
+    <!-- ======= Bootstrap CSS ======= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- ======= Owl Carousel CSS ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        referrerpolicy="no-referrer">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        referrerpolicy="no-referrer">
+
+    <!-- ======= Fancybox CSS ======= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ======= Custom Styles ======= -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="desktopHeader">
+        <div class="desktopHeaderInnerWrap">
+            <div class="desktopLogoWrap">
+                <a href="/"><img src="./assets/images/mega-menus/site-logo.webp" alt="site-logo"></a>
+            </div>
+
+            <div class="desktopNavRightSection">
+                <ul class="desktopNavLinkList">
+                    <li class="toggleBoatSalesMenu"><a href="javascript:void(0)" class="centralNavLink">Boat Sales</a>
+                    </li>
+                    <li><a id="header-sell-trade" href="javascript:void(0)" class="centralNavLink">Sell / Trade</a></li>
+                    <li class="toggleServiceMenu">
+                        <a id="header-service-dropdown" href="javascript:void(0)"
+                            class="centralNavLink dropdown-link"><span>Service</span></a>
+                    </li>
+                    <li><a id="header-events" href="/events" class="centralNavLink">Events</a></li>
+                </ul>
+            </div>
+
+            <div class="selectStoreAndResourcesOptionWrap">
+                <div class="headerSearchWrap">
+                    <img src="./assets/images/mega-menus/search-icon-desktop.webp" alt="search-icon">
+                    <input type="text" class="headerSearchBox" placeholder="Search boats">
+                </div>
+
+                <div class="toggleStoreMenu">
+                    <div class="locationDropdown">
+                        <p>
+                            <img src="./assets/images/mega-menus/location-icon.webp" alt="location-icon">
+                        <h6 class="selectedStoreName">Your Store</h6>
+                        <img src="./assets/images/mega-menus/dropdow-icon.webp" alt="dropdow-icon">
+                        </p>
+                    </div>
+                    <p class="selectedStoreCity">Lewisville, TX</p>
+                </div>
+
+                <div class="headerResourcesBox toggleResourcesMegaMenu">
+                    <a class="headerResourcesText" href="javascript:void(0)">Resources</a>
+                    <img class="resourcesIcon" src="./assets/images/mega-menus/burger-icon.webp" alt="cross-icon">
+                </div>
+            </div>
+
+            <!-- ================= STORE MENU INFO CARD ================= -->
+            <div class="selectStoreMenu" style="display:none;">
+                <div class="selectStoreInnerMenu">
+                    <h4 class="selectedStoreName">Phill Dill Boats</h4>
+                    <p class="selectedStoreAddress">123 Marina Blvd, Naples, FL 34102</p>
+                    <a href="tel:+1234567890" class="selectedStorePhoneNumber d-block mb-3">(123) 456-7890</a>
+
+                    <button class="redBtn w-100" id="changeYourLocationClick">Change Your Store</button>
+                    <a href="javascript:void(0)" class="primaryWhiteBtn d-block mt-2 text-center"
+                        id="storeDetailsBtnClick">
+                        Location Details & Services
+                    </a>
+                </div>
+            </div>
+
+            <!-- Store Listing Modal -->
+            <div id="storeModalClick" class="availableStoreListingModal">
+                <div class="selectStoreModalTopBar">
+                    <h3 class="selectStoreModalHeading">Select a Store</h3>
+                    <div class="zipCodeSearchBarWrapper">
+                        <img src="./assets/images/mega-menus/select-store-search.png" alt="icon">
+                        <input id="storeSearchInput" type="text" class="zipCodeSearchInput"
+                            placeholder="Enter Zip Code">
+                        <button id="storeSearchBtn" class="storeSearchBtn" type="button">Search</button>
+                    </div>
+                    <a id="useCurrentLocation" href="javascript:void(0)" class="use-current-location">
+                        <i class="fa fa-map-marker"></i> Use my current location
+                    </a>
+                </div>
+
+                <div class="availableAndSelectedStoreCardsContainer">
+
+                    <!-- Example Store Card 1 -->
+                    <div class="availabelStoreCard" data-locationid="001" data-name="Naples Marina" data-dealerid="D001"
+                        data-address="123 Marina Blvd, Naples, FL 34102" data-phone="(123) 456-7890">
+                        <div class="selectedStoreCardInnerWrap">
+                            <div class="availableStoreInfoWrap">
+                                <h4 class="availableStoreTitle mb-3">Naples Marina</h4>
+                                <p class="availableStoreLocationPara">123 Marina Blvd, <br>Naples, FL 34102</p>
+                                <div class="mt-3">
+                                    <a href="tel:+1234567890" class="availableStorePhone">(123) 456-7890</a>
+                                </div>
+                            </div>
+                            <div class="availableStoreSecondaryPart">
+                                <a href="javascript:void(0)" class="black-to-gold-btn select-store-btn">Select Store</a>
+                                <a href="javascript:void(0)" class="whiteBtn">Location Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example Store Card 2 -->
+                    <div class="availabelStoreCard" data-locationid="002" data-name="Marco Island Marina"
+                        data-dealerid="D002" data-address="456 Island Way, Marco Island, FL 34145"
+                        data-phone="(987) 654-3210">
+                        <div class="selectedStoreCardInnerWrap">
+                            <div class="availableStoreInfoWrap">
+                                <h4 class="availableStoreTitle mb-3">Marco Island Marina</h4>
+                                <p class="availableStoreLocationPara">456 Island Way, <br>Marco Island, FL 34145</p>
+                                <div class="mt-3">
+                                    <a href="tel:+19876543210" class="availableStorePhone">(987) 654-3210</a>
+                                </div>
+                            </div>
+                            <div class="availableStoreSecondaryPart">
+                                <a href="javascript:void(0)" class="black-to-gold-btn select-store-btn">Select Store</a>
+                                <a href="javascript:void(0)" class="whiteBtn">Location Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="close closeSelectStoreModal">
+                    <img src="./assets/images/mega-menus/cross-icon.webp" alt="icon">
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ================= MOBILE HEADER ================= -->
+
+    <header class="mobileHeader">
+        <div class="mobileTopBar">
+            <div class="mobileTopBarInnerWrap">
+                <div class="mobileLocationInfoWrap" id="mobileLocationInfoToggler">
+                    <img src="./assets/images/mega-menus/mobile-location-icon.png" alt="location-icon">
+                    <p class="mobilePhoneLocationWrap">Cape Coral, FL 33904</p>
+                </div>
+
+                <div>
+                    <a href="tel:+12393561450" class="mobileTopBarPhone">(239) 356-1450</a>
+                </div>
+            </div>
+        </div>
+        <div class="mobileHeaderInnerWrap">
+            <div class="mobileLogoWrap">
+                <a href="/"><img src="./assets/images/mega-menus/site-logo.webp" alt="site-logo"></a>
+            </div>
+
+            <div class="mobileBurgerIconAndSearchIconWrap">
+                <div class="mobileSearchIconWrapper">
+                    <img src="./assets/images/mega-menus/search-icon-mobile.webp" alt="search">
+                </div>
+                <div class="burgerBtnContainer">
+                    <div class="lineOne burgerLine"></div>
+                    <div class="lineTwo burgerLine"></div>
+                    <div class="lineThree burgerLine"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobileSearchBarWrapper">
+            <div class="formFieldWrap mb-0">
+                <input class="formField" type="text" class="mobileSearchBar"
+                    placeholder="Search year, make, model, or stock#">
+            </div>
+        </div>
+
+        <div class="mobileNavMegaMenu">
+            <div class="mainMobileMenuWrapper">
+                <div class="menuWrap">
+                    <div class="mainMenuMobileMenuLinkWrap">
+                        <ul class="mobileMenuLinkList">
+                            <li><a href="javascript:void(0)" class="mobileMenuLargeLink toggleMenu-boats">Boat Sales</a>
+                            </li>
+                            <li><a href="javascript:void(0)" class="mobileMenuLargeLink">Sell Your Boat</a></li>
+                            <li><a href="javascript:void(0)" class="mobileMenuLargeLink">Specials & Offers</a>
+                            <li><a href="javascript:void(0)" class="mobileMenuLargeLink toggleMenu-service">Service</a>
+                            </li>
+                            <li><a href="javascript:void(0)" class="mobileMenuLargeLink">Events</a></li>
+                        </ul>
+                        <ul class="mobileMenuLinkList secondMobileMenuList">
+                            <li><a href="javascript:void(0)"
+                                    class="mobileMenuSmallLink toggleMenu-resources">Resources</a></li>
+                            <li><a href="javascript:void(0)" class="mobileMenuSmallLink">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submenus -->
+            <div class="subMobileMenus submenu-boats">
+                <div class="mobileMenuTopBar">
+                    <div class="mainMenuIconWrapper">
+                        <img src="./assets/images/mega-menus/back-arrow-mobile.webp" alt="mobile-arrow">
+                        <span class="mainMenuIconText">Main Menu</span>
+                    </div>
+                </div>
+                <div class="subMenuContentWrap">
+                    <h5 class="subMenuHeading mb-3">Boats</h5>
+                    <div class="subMenuLink"><a href="/boats-for-sale-mansfield-oh" class="subMenuLinkText">All
+                            Boats</a></div>
+                    <div class="subMenuLink"><a href="/new-boats-for-sale-mansfield-oh" class="subMenuLinkText">New
+                            Boats</a></div>
+                    <div class="subMenuLink"><a href="/used-pre-owned-boats-for-sale-mansfield-oh"
+                            class="subMenuLinkText">Pre-Owned Boats</a></div>
+                    <div class="subMenuLink"><a href="/boat-trailers-for-sale-mansfield-oh"
+                            class="subMenuLinkText">Specials</a></div>
+                    <div class="subMenuLink"><a href="/outborad-motors-for-sale" class="subMenuLinkText">Outboard
+                            Motors</a></div>
+                </div>
+
+                <div class="container-fluid my-4">
+                    <div class="row">
+                        <div class="col-4 px-1 mb-2">
+                            <a href="/" id="mobile-nav-bar-inventory-sunchaser-btn">
+                                <div class="mobileBoatsMenuCard">
+                                    <img src="./assets/images/mega-menus/axopar-mobile-logo.webp" alt="sunchaser">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-4 px-1 mb-2">
+                            <a href="/" id="mobile-nav-bar-inventory-sunchaser-btn">
+                                <div class="mobileBoatsMenuCard">
+                                    <img src="./assets/images/mega-menus/cobia-mobile-logo.webp" alt="sunchaser">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-4 px-1 mb-2">
+                            <a href="/" id="mobile-nav-bar-inventory-sunchaser-btn">
+                                <div class="mobileBoatsMenuCard">
+                                    <img src="./assets/images/mega-menus/evotti-mobile-logo.webp" alt="sunchaser">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-4 px-1 mb-2">
+                            <a href="/" id="mobile-nav-bar-inventory-sunchaser-btn">
+                                <div class="mobileBoatsMenuCard">
+                                    <img src="./assets/images/mega-menus/harris-mobile-logo.webp" alt="sunchaser">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-4 px-1 mb-2">
+                            <a href="/" id="mobile-nav-bar-inventory-sunchaser-btn">
+                                <div class="mobileBoatsMenuCard">
+                                    <img src="./assets/images/mega-menus/hcb-mobile-logo.webp" alt="sunchaser">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-4 px-1 mb-2">
+                            <a href="/" id="mobile-nav-bar-inventory-sunchaser-btn">
+                                <div class="mobileBoatsMenuCard">
+                                    <img src="./assets/images/mega-menus/pursuit-mobile-logo.webp" alt="sunchaser">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-4 px-1 mb-2">
+                            <a href="/" id="mobile-nav-bar-inventory-sunchaser-btn">
+                                <div class="mobileBoatsMenuCard">
+                                    <img src="./assets/images/mega-menus/regal-mobile-logo.webp" alt="sunchaser">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-4 px-1 mb-2">
+                            <a href="/" id="mobile-nav-bar-inventory-sunchaser-btn">
+                                <div class="mobileBoatsMenuCard">
+                                    <img src="./assets/images/mega-menus/tiara-mobile-logo.webp" alt="sunchaser">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subMenuContentWrap">
+                    <div class="subMenuLink"><a href="/boat-trailers-for-sale-mansfield-oh" class="subMenuLinkText">Get
+                            Financing</a></div>
+                    <div class="subMenuLink"><a href="/outborad-motors-for-sale" class="subMenuLinkText">Marine
+                            Insurance</a></div>
+                </div>
+            </div>
+
+            <div class="subMobileMenus submenu-service">
+                <div class="mobileMenuTopBar">
+                    <div class="mainMenuIconWrapper">
+                        <img src="./assets/images/mega-menus/back-arrow-mobile.webp" alt="mobile-arrow">
+                        <span class="mainMenuIconText">Main Menu</span>
+                    </div>
+                </div>
+                <div class="subMenuContentWrap">
+                    <h5 class="subMenuHeading mb-3">Service</h5>
+                    <div class="subMenuLink"><a href="/boat-service-repair-mansfield-oh" class="subMenuLinkText">Service
+                            Center</a></div>
+                    <div class="subMenuLink"><a href="/boat-redocking-mansfield-oh" class="subMenuLinkText">Repower</a>
+                    </div>
+                    <div class="subMenuLink"><a href="/boat-parts-mansfield-oh" class="subMenuLinkText">Parts &
+                            Service</a></div>
+                </div>
+            </div>
+
+            <div class="subMobileMenus submenu-resources">
+                <div class="mobileMenuTopBar">
+                    <div class="mainMenuIconWrapper">
+                        <img src="./assets/images/mega-menus/back-arrow-mobile.webp" alt="mobile-arrow">
+                        <span class="mainMenuIconText">Main Menu</span>
+                    </div>
+                </div>
+                <div class="subMenuContentWrap">
+                    <h5 class="subMenuHeading mb-3">Resources</h5>
+                    <div class="subMenuLink"><a href="/about" class="subMenuLinkText">About</a></div>
+                    <div class="subMenuLink"><a href="/staff" class="subMenuLinkText">Meet The Team</a></div>
+                    <div class="subMenuLink"><a href="/blog" class="subMenuLinkText">News & Articles</a></div>
+                    <div class="subMenuLink"><a href="/reviews" class="subMenuLinkText">Reviews</a></div>
+                    <div class="subMenuLink"><a href="/careers" class="subMenuLinkText">Employment</a></div>
+                    <div class="subMenuLink"><a href="/contact" class="subMenuLinkText">Contact</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobileSelectStoreMenu">
+            <div class="mobileSelectStoreHeaderWrap mb-3">
+                <h4 class="mobileSelectedStoreTitle">Walker’s Marine Cape Coral</h4>
+                <img class="mobileBackArrow" src="./assets/images/mega-menus/mobile-back-arrow-black.png" alt="">
+            </div>
+
+            <p class="mobileSelectStoreAddressPara">1503 SE 46th Ln <br>Cape Coral, FL 33904</p>
+
+            <div class="my-3">
+                <a href="tel:+12393561450" class="mobileSelectStorePhone">(239) 356-1450</a>
+            </div>
+
+            <div>
+                <h4 class="mobileSelectStoreHoursHeading">SALES HOURS</h4>
+                <p class="regularBlackPara text-left">Monday-Friday: 8AM-5PM</p>
+                <p class="regularBlackPara text-left">Saturday: 9AM-4PM</p>
+                <p class="regularBlackPara text-left">Sunday: 11AM-3PM</p>
+            </div>
+
+            <div class="mt-3">
+                <h4 class="mobileSelectStoreHoursHeading">SERVICE HOURS</h4>
+                <p class="regularBlackPara text-left">Monday-Friday: 8AM-5PM</p>
+                <p class="regularBlackPara text-left">Saturday & Sunday: Closed</p>
+            </div>
+
+            <div class="btnWrap d-flex flex-wrap flex-column">
+                <a href="javacript:void(0)" class="redBtn">Change Your Store</a>
+                <a href="javacript:void(0)" class="primaryWhiteBtn mt-3">Location Details & Services</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- boat sales mega menu starts here -->
+    <div class="boatsSalesMegaMenu">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <ul class="boatSalesMenuList">
+                                <li><a href="/search" id="all-listing-menu" class="megaMenuLink">All Listings</a></li>
+                                <li><a href="/search/condition-New" id="new-inv-menu" class="megaMenuLink">New Boats for
+                                        Sale</a></li>
+                                <li><a href="/search/condition-Used" id="used-inv-menu" class="megaMenuLink">Pre-Owned
+                                        Boats For Sale</a></li>
+                                <li><a href="/specials" id="specials-menu" class="megaMenuLink">Specials</a></li>
+                            </ul>
+
+                            <ul class="boatSalesMenuList boatSalesSecondList">
+                                <li><a href="/financing" id="financing-menu" class="megaMenuLink">Get Financing</a></li>
+                                <li><a href="/marine-insurance" id="marine-menu" class="megaMenuLink">Marine
+                                        Insurance</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-9">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-4 px-0">
+                                        <a href="/brand/regal" id="axis-brand-header">
+                                            <div class="boatSalesMenuCard">
+                                                <img class="boatSalesMenuMedia"
+                                                    src="./assets/images/mega-menus/regal-image.webp" alt="image">
+
+                                                <div class="boatSalesMenuLogoWrap">
+                                                    <img src="./assets/images/mega-menus/regal-logo.webp"
+                                                        alt="axis-logo">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 px-0">
+                                        <a href="/brand/yamaha" id="barletta-brand-header">
+                                            <div class="boatSalesMenuCard">
+                                                <img class="boatSalesMenuMedia"
+                                                    src="./assets/images/mega-menus/yamaha-image.webp" alt="image">
+
+                                                <div class="boatSalesMenuLogoWrap">
+                                                    <img src="./assets/images/mega-menus/yamaha-logo.webp" alt="logo">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 px-0">
+                                        <a href="/brand/bennington" id="cobalt-brand-header">
+                                            <div class="boatSalesMenuCard">
+                                                <img class="boatSalesMenuMedia"
+                                                    src="./assets/images/mega-menus/bennington.webp" alt="image">
+
+                                                <div class="boatSalesMenuLogoWrap">
+                                                    <img src="./assets/images/mega-menus/bennington-logo.webp"
+                                                        alt="logo">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boatSalesMenuCrossIcon">
+                <img src="./assets/images/mega-menus/cross-icon.webp" alt="cross-icon">
+            </div>
+        </div>
+    </div>
+    <!-- boat sales mega menu ends here -->
+
+    <!-- service mega menu starts here -->
+    <div class="servicesMegaMenu">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-3 px-0">
+                            <a href="/service" id="service-department-header">
+                                <div class="serviceMenuCard">
+                                    <div class="serviceMenuCardInnerWrap">
+                                        <div class="serviceMenuCardImageWrap">
+                                            <img src="./assets/images/mega-menus/service-center.webp" alt="image">
+                                        </div>
+
+                                        <div class="serviceMenuCardContentWrap">
+                                            <h4 class="serviceMenuCardTitle">Service Center</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 px-0">
+                            <a href="/mercury-outboards" id="marina-storage-header">
+                                <div class="serviceMenuCard">
+                                    <div class="serviceMenuCardInnerWrap">
+                                        <div class="serviceMenuCardImageWrap">
+                                            <img src="./assets/images/mega-menus/mercury-outboards.webp" alt="image">
+                                        </div>
+
+                                        <div class="serviceMenuCardContentWrap">
+                                            <h4 class="serviceMenuCardTitle">Mercury Outboards</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 px-0">
+                            <a href="/yamaha-outboards" id="repower-header">
+                                <div class="serviceMenuCard">
+                                    <div class="serviceMenuCardInnerWrap">
+                                        <div class="serviceMenuCardImageWrap">
+                                            <img src="./assets/images/mega-menus/mercury-yamaha.webp" alt="image">
+                                        </div>
+
+                                        <div class="serviceMenuCardContentWrap">
+                                            <h4 class="serviceMenuCardTitle">Mercury Yamaha</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 px-0">
+                            <a href="/parts" id="parts-accessories-header">
+                                <div class="serviceMenuCard">
+                                    <div class="serviceMenuCardInnerWrap">
+                                        <div class="serviceMenuCardImageWrap">
+                                            <img src="./assets/images/mega-menus/parts-and-accessories.webp"
+                                                alt="image">
+                                        </div>
+
+                                        <div class="serviceMenuCardContentWrap">
+                                            <h4 class="serviceMenuCardTitle">Parts & Accessories</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="serviceMenuCrossIcon">
+                <img src="./assets/images/mega-menus/cross-icon.webp" alt="cross-icon">
+            </div>
+        </div>
+    </div>
+    <!-- service mega menu ends here -->
+
+    <!-- resources mega menu starts here -->
+    <div class="resourcesMegaMenu">
+        <ul class="resourcesBoldLinkList">
+            <li><a href="/about" id="about-footer" class="resourcesBoldLink">About</a></li>
+            <li><a href="/special-offers" id="news-footer" class="resourcesBoldLink">Specials & Offers</a></li>
+            <li><a href="/blog" id="news-footer" class="resourcesBoldLink">News & Articles</a></li>
+            <li><a href="/staff" id="staff-footer" class="resourcesBoldLink">Meet Our Staff</a></li>
+        </ul>
+
+        <ul class="resourcesBoldLinkList mt-5">
+            <li><a href="/reviews" id="reviews-footer" class="resourcesLink">Reviews</a></li>
+            <li><a href="/" id="employement" class="resourcesLink">Employment</a></li>
+            <li><a href="/contact" id="contact" class="resourcesLink">Contact</a></li>
+        </ul>
+    </div>
+    <!-- resources mega menu ends here -->
+
+    <!-- specials detail page starts here -->
+    <section>
+        <div class="specialDetaisHeaderSection">
+            <div class="specialHeaderContentWrap">
+                <div class="specialDetailImageWrap">
+                    <img src="./assets/images/special-details/grey.webp" alt="image">
+                </div>
+
+                <div class="specialDetailContentWrap">
+                    <h1 class="mainHeading">Model Year End Savings Event</h1>
+
+                    <p class="regularBlackPara mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p class="regularBlackPara mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <div class="locationInventorySection">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-11 mx-auto">
+                        <div class="headingWrap">
+                            <div class="homeSpecialsHeaderWrap">
+                                <div class="d-none d-lg-block"></div>
+                                <div class="homeSpecialsHeadingAndBtnWrap">
+                                    <h4 class="mainHeading">Inventory On Special</h4>
+                                    <a href="javascript:void(0)" class="secondaryRedBtn">Go To Listings &nbsp; ></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 px-0 customMarginForLocationInventoryCard">
+                                <div class="newArrivalCard">
+                                    <div class="newArrivalImageWrap">
+                                        <img class="newArrivalImage" src="./assets/images/home/grey.webp" alt="image">
+
+                                        <div class="newArrivalLengthWrap">
+                                            <img src="./assets/images/home/length-icon.webp" alt="lenth">
+                                            <p class="newArrivalLength">25'6”</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="newArrivalContentWrap">
+                                        <h4 class="newArrivalTitle">Year Make Model</h4>
+                                        <p class="newArrivalPricing"><span class="newArrivalOriginalPrice">Contact For
+                                                Price</span> <span class="newArrivalMontlyPrice">Est. $7,594/mo*</span>
+                                        </p>
+                                        <p class="newArrivalInfoPara"><span>New</span> <span
+                                                class="newArrivalBeforeLine">Dadeville, AL</span> <span
+                                                class="newArrivalBeforeLine">N81103A</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 px-0 customMarginForLocationInventoryCard">
+                                <div class="newArrivalCard">
+                                    <div class="newArrivalImageWrap">
+                                        <img class="newArrivalImage" src="./assets/images/home/grey.webp" alt="image">
+
+                                        <div class="newArrivalLengthWrap">
+                                            <img src="./assets/images/home/length-icon.webp" alt="lenth">
+                                            <p class="newArrivalLength">25'6”</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="newArrivalContentWrap">
+                                        <h4 class="newArrivalTitle">Year Make Model</h4>
+                                        <p class="newArrivalPricing"><span class="newArrivalOriginalPrice">Contact For
+                                                Price</span> <span class="newArrivalMontlyPrice">Est. $7,594/mo*</span>
+                                        </p>
+                                        <p class="newArrivalInfoPara"><span>New</span> <span
+                                                class="newArrivalBeforeLine">Dadeville, AL</span> <span
+                                                class="newArrivalBeforeLine">N81103A</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 px-0 customMarginForLocationInventoryCard">
+                                <div class="newArrivalCard">
+                                    <div class="newArrivalImageWrap">
+                                        <img class="newArrivalImage" src="./assets/images/home/grey.webp" alt="image">
+
+                                        <div class="newArrivalLengthWrap">
+                                            <img src="./assets/images/home/length-icon.webp" alt="lenth">
+                                            <p class="newArrivalLength">25'6”</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="newArrivalContentWrap">
+                                        <h4 class="newArrivalTitle">Year Make Model</h4>
+                                        <p class="newArrivalPricing"><span class="newArrivalOriginalPrice">Contact For
+                                                Price</span> <span class="newArrivalMontlyPrice">Est. $7,594/mo*</span>
+                                        </p>
+                                        <p class="newArrivalInfoPara"><span>New</span> <span
+                                                class="newArrivalBeforeLine">Dadeville, AL</span> <span
+                                                class="newArrivalBeforeLine">N81103A</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 px-0 customMarginForLocationInventoryCard">
+                                <div class="newArrivalCard">
+                                    <div class="newArrivalImageWrap">
+                                        <img class="newArrivalImage" src="./assets/images/home/grey.webp" alt="image">
+
+                                        <div class="newArrivalLengthWrap">
+                                            <img src="./assets/images/home/length-icon.webp" alt="lenth">
+                                            <p class="newArrivalLength">25'6”</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="newArrivalContentWrap">
+                                        <h4 class="newArrivalTitle">Year Make Model</h4>
+                                        <p class="newArrivalPricing"><span class="newArrivalOriginalPrice">Contact For
+                                                Price</span> <span class="newArrivalMontlyPrice">Est. $7,594/mo*</span>
+                                        </p>
+                                        <p class="newArrivalInfoPara"><span>New</span> <span
+                                                class="newArrivalBeforeLine">Dadeville, AL</span> <span
+                                                class="newArrivalBeforeLine">N81103A</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 px-0 customMarginForLocationInventoryCard">
+                                <div class="newArrivalCard">
+                                    <div class="newArrivalImageWrap">
+                                        <img class="newArrivalImage" src="./assets/images/home/grey.webp" alt="image">
+
+                                        <div class="newArrivalLengthWrap">
+                                            <img src="./assets/images/home/length-icon.webp" alt="lenth">
+                                            <p class="newArrivalLength">25'6”</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="newArrivalContentWrap">
+                                        <h4 class="newArrivalTitle">Year Make Model</h4>
+                                        <p class="newArrivalPricing"><span class="newArrivalOriginalPrice">Contact For
+                                                Price</span> <span class="newArrivalMontlyPrice">Est. $7,594/mo*</span>
+                                        </p>
+                                        <p class="newArrivalInfoPara"><span>New</span> <span
+                                                class="newArrivalBeforeLine">Dadeville, AL</span> <span
+                                                class="newArrivalBeforeLine">N81103A</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 px-0 customMarginForLocationInventoryCard">
+                                <div class="newArrivalCard">
+                                    <div class="newArrivalImageWrap">
+                                        <img class="newArrivalImage" src="./assets/images/home/grey.webp" alt="image">
+
+                                        <div class="newArrivalLengthWrap">
+                                            <img src="./assets/images/home/length-icon.webp" alt="lenth">
+                                            <p class="newArrivalLength">25'6”</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="newArrivalContentWrap">
+                                        <h4 class="newArrivalTitle">Year Make Model</h4>
+                                        <p class="newArrivalPricing"><span class="newArrivalOriginalPrice">Contact For
+                                                Price</span> <span class="newArrivalMontlyPrice">Est. $7,594/mo*</span>
+                                        </p>
+                                        <p class="newArrivalInfoPara"><span>New</span> <span
+                                                class="newArrivalBeforeLine">Dadeville, AL</span> <span
+                                                class="newArrivalBeforeLine">N81103A</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 px-0 customMarginForLocationInventoryCard">
+                                <div class="newArrivalCard">
+                                    <div class="newArrivalImageWrap">
+                                        <img class="newArrivalImage" src="./assets/images/home/grey.webp" alt="image">
+
+                                        <div class="newArrivalLengthWrap">
+                                            <img src="./assets/images/home/length-icon.webp" alt="lenth">
+                                            <p class="newArrivalLength">25'6”</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="newArrivalContentWrap">
+                                        <h4 class="newArrivalTitle">Year Make Model</h4>
+                                        <p class="newArrivalPricing"><span class="newArrivalOriginalPrice">Contact For
+                                                Price</span> <span class="newArrivalMontlyPrice">Est. $7,594/mo*</span>
+                                        </p>
+                                        <p class="newArrivalInfoPara"><span>New</span> <span
+                                                class="newArrivalBeforeLine">Dadeville, AL</span> <span
+                                                class="newArrivalBeforeLine">N81103A</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 px-0 customMarginForLocationInventoryCard">
+                                <div class="newArrivalCard">
+                                    <div class="newArrivalImageWrap">
+                                        <img class="newArrivalImage" src="./assets/images/home/grey.webp" alt="image">
+
+                                        <div class="newArrivalLengthWrap">
+                                            <img src="./assets/images/home/length-icon.webp" alt="lenth">
+                                            <p class="newArrivalLength">25'6”</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="newArrivalContentWrap">
+                                        <h4 class="newArrivalTitle">Year Make Model</h4>
+                                        <p class="newArrivalPricing"><span class="newArrivalOriginalPrice">Contact For
+                                                Price</span> <span class="newArrivalMontlyPrice">Est. $7,594/mo*</span>
+                                        </p>
+                                        <p class="newArrivalInfoPara"><span>New</span> <span
+                                                class="newArrivalBeforeLine">Dadeville, AL</span> <span
+                                                class="newArrivalBeforeLine">N81103A</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btnWrap text-center">
+                            <a href="javascript:void(0)" class="blueBtn">Go To Listings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- specials detail page ends here -->
+
+    <footer>
+        <div class="footerWrapper">
+            <div class="newsLetterSection">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-11 mx-auto">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4 mb-lg-0">
+                                    <div class="newsLetterTextWrapper">
+                                        <div class="newsLetterTextInnerWrap">
+                                            <h5 class="secondaryWhiteHeading">Catch the latest from Phil Dill Boats</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="newsLetterFormWrapper">
+                                        <div class="formFieldWrap mb-0">
+                                            <label for="newsLetterEmail" class="sr-only">Email</label>
+                                            <div class="field-error" id="error_newsLetterEmail"></div>
+                                            <input class="formField require_check" type="email" id="newsLetterEmail"
+                                                placeholder="Enter Email*">
+                                        </div>
+
+                                        <div>
+                                            <button class="secondaryWhiteBtn">JOIN NEWSLETTER</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerSiteMapSection">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-10 mx-auto">
+                            <div class="row">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="siteMapItem">
+                                                            <div class="siteMapHeadingWrap">
+                                                                <h6 class="siteMapHeading">Sales</h6>
+                                                            </div>
+
+                                                            <ul class="siteMapLinkList">
+                                                                <li><a href="javascript:void(0)" class="siteMapLink">New
+                                                                        Boats</a></li>
+
+                                                                <li><a href="javascript:void(0)"
+                                                                        class="siteMapLink">Pre-Owned Boats</a></li>
+                                                                <li><a href="javascript:void(0)" class="siteMapLink">Get
+                                                                        Financing</a></li>
+                                                                <li><a href="javascript:void(0)"
+                                                                        class="siteMapLink">Sell/Trade Your Boat</a>
+                                                                </li>
+                                                                <li><a href="javascript:void(0)"
+                                                                        class="siteMapLink">Outboard Engines</a></li>
+                                                                <li><a href="javascript:void(0)" class="siteMapLink">Pro
+                                                                        Shop</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="siteMapItem">
+                                                            <div class="siteMapHeadingWrap">
+                                                                <h6 class="siteMapHeading">Service</h6>
+                                                            </div>
+
+                                                            <ul class="siteMapLinkList">
+                                                                <li><a href="javascript:void(0)"
+                                                                        class="siteMapLink">Service Center</a></li>
+
+                                                                <li><a href="javascript:void(0)"
+                                                                        class="siteMapLink">Repower</a></li>
+                                                                <li><a href="javascript:void(0)"
+                                                                        class="siteMapLink">Parts & Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="siteMapItem">
+                                                            <div class="siteMapHeadingWrap">
+                                                                <h6 class="siteMapHeading">Resources</h6>
+                                                            </div>
+
+                                                            <ul class="siteMapLinkList">
+                                                                <li><a href="javascript:void(0)"
+                                                                        class="siteMapLink">About Us</a></li>
+
+                                                                <li><a href="javascript:void(0)"
+                                                                        class="siteMapLink">Events & Promotions</a></li>
+                                                                <li><a href="javascript:void(0)"
+                                                                        class="siteMapLink">News & Articles</a></li>
+                                                                <li><a href="javascript:void(0)"
+                                                                        class="siteMapLink">Testimonials</a></li>
+                                                                <li><a href="javascript:void(0)"
+                                                                        class="siteMapLink">Meet the Crew</a></li>
+                                                                <li><a href="javascript:void(0)"
+                                                                        class="siteMapLink">Join Our Team</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 order-1 order-lg-2 mb-5 mb-lg-0">
+                                            <div class="footerLogoWrapper">
+                                                <a href="/"><img src="./assets/images/mega-menus/site-logo.webp"
+                                                        alt=""></a>
+                                            </div>
+
+                                            <div>
+                                                <p class="footerLocationPara mb-3">2 Locations to Serve You</p>
+                                                <p class="footerLocationPara">Contact Us</p>
+                                            </div>
+
+                                            <div class="btnWrap text-center">
+                                                <a href="tel:+12076936264" class="footerPhone">207.693.6264</a>
+                                            </div>
+
+                                            <div class="socailWrap">
+                                                <div class="mt-4 socailIconsContainer">
+                                                    <a href="javascript:void(0)">
+                                                        <div class="socialIconWrap">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="javascript:void(0)">
+                                                        <div class="socialIconWrap">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="col-xl-10 mx-auto">
+                    <div class="discalimerSection">
+                        <div class="disclaimerHeadingWrap">
+                            <h6 class="disclaimerHeading">Disclaimer</h6>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="disclaimerWrapper">
+                                    <p class="regularBlackPara text-left">We strive to ensure all pricing and
+                                        information contained in this website is accurate. Despite our efforts,
+                                        occasionally errors resulting from typos, inaccurate detail information or
+                                        technical mistakes may occur. We are not responsible for any such errors and
+                                        reserve the right to correct them at any time.</p>
+
+                                    <p class="regularBlackPara text-left mt-4">This site is protected by reCAPTCHA and
+                                        the Google <a href="javascript:void(0)">Privacy Policy </a>and <a
+                                            href="javascript:void(0)">Terms of Service</a> Apply.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="disclaimerWrapper">
+                                    <p class="regularBlackPara text-left">We improve our products and advertising by
+                                        using Microsoft Clarity to see how you use our website. By using our site, you
+                                        agree that we and Microsoft can collect and use this data. Our <a
+                                            href="javascript:void(0)">privacy statement</a> has more details.</p>
+
+                                    <p class="regularBlackPara text-left mt-3">*By clicking submit, you consent to allow
+                                        us to store and process your information in accordance with our Privacy Policy .
+                                        You can manage your preferences or unsubscribe at any time via the links at the
+                                        bottom of emails. Visit our Privacy Policy  to learn about our information
+                                        practices and your privacy rights.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerBottomWrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-10 px-3 px-lg-4 mx-auto">
+                            <div class="footerBottomInnerWrap">
+                                <ul class="footerBottomList">
+                                    <li><a class="footerListItem" href="javascript:void(0)">Privacy Policy </a></li>
+                                    <li><a class="footerListItem" id="footer-mds-brand-button"
+                                            href="https://mdsbrand.com/" target="_blank">Terms Of Use</a>
+                                    </li>
+                                    <li><a class="footerListItem" href="/privacypolicy">Cookie Policy
+                                            Disclaimer</a></li>
+                                    <li><a class="footerListItem" href="/privacypolicy">Accessibility
+                                            Statement</a></li>
+                                    <li><a class="footerListItem" href="/privacypolicy">Acceptable Use
+                                            Policy</a></li>
+                                    <li><a class="footerListItem" href="/privacypolicy">Do Not Sell My
+                                            Info</a></li>
+                                </ul>
+
+                                <div>
+                                    <a class="footerBrandLink" href="https://mdsbrand.com/" target="_blank">Powered by
+                                        MDS Brand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ======= Script Dependencies ======= -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
