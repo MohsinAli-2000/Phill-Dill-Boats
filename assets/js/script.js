@@ -262,30 +262,9 @@ $(document).ready(function () {
 
     // ================================++++++++++++++++++++====================
     // service page code starts here
-    if ($('.serviceCarousel').length) {
-        $('.serviceCarousel').owlCarousel({
-            loop: true,
-            margin: 20,
-            navText: ['<img src="./assets/images/home/prev-arrow.webp" alt="prev"/>', '<img src="./assets/images/home/next-arrow.webp" alt="next"/>'],
-            nav: true,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            }
-        });
-    }
-
-    const activeBorder = "1px solid #1892AA";
-    const inactiveBorder = "1px solid #000";
-    const activeColor = "#1892AA";
+    const activeBorder = "1px solid #283C5E";
+    const inactiveBorder = "1px solid #D9D9D9";
+    const activeColor = "#283C5E";
     const inactiveColor = "#000";
     const activeIcon = "./assets/images/service/blue-arrow.webp";
     const inactiveIcon = "./assets/images/service/black-arrow.webp";

@@ -48,6 +48,11 @@ a:hover {
     src: url('../fonts/San-Francisco-Pro-Display/SF-Pro-Display-Thin.otf');
 }
 
+@font-face {
+    font-family: "SF Pro Medium";
+    src: url('../fonts/San-Francisco-Pro-Display/SF-Pro-Display-Semibold.otf');
+}
+
 .whiteBtn {
     color: var(--Navy);
     text-align: center;
@@ -75,8 +80,8 @@ a:hover {
     color: var(--White);
 }
 
-.secondaryRedBtn {
-    color: var(--Red);
+.secondaryWhiteBtn {
+    color: var(--White);
     text-align: center;
     font-family: "SF Pro";
     font-size: 16px;
@@ -84,6 +89,12 @@ a:hover {
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: 2px solid #FFFFFF33;
+    background: transparent;
+    padding: 12px 26px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -91,10 +102,10 @@ a:hover {
     transition: all 0.4s;
 }
 
-.secondaryRedBtn:hover {
-    color: var(--Red);
+.secondaryWhiteBtn:hover {
+    border: 2px solid #ffffff;
+    color: var(--White);
 }
-
 
 .redBtn {
     color: var(--White, #FFF);
@@ -1442,6 +1453,8 @@ a:hover {
 .newsLetterFormWrapper {
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 16px;
 }
@@ -2716,7 +2729,7 @@ a:hover {
 
 /* about page css starts here */
 .ourMissionTextWrap {
-    max-width: 440px;
+    max-width: 360px;
 }
 
 .ourMissionCard {
@@ -2727,11 +2740,11 @@ a:hover {
 .ourMissionCardTitle {
     color: var(--Navy);
     font-family: "SF Pro";
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 590;
-    line-height: 32px;
-    letter-spacing: 0.48px;
+    line-height: 24px;
+    letter-spacing: 0.72px;
 }
 
 .ourMissionAndValueSection {
@@ -2987,124 +3000,6 @@ a:hover {
 /* contact page css ends here */
 
 /* service page css starts here */
-.serviceSpecialImageWrap {
-    position: relative;
-    padding-top: 38%;
-    min-height: 400px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.serviceSpecialImageWrap img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.serviceCarousel {
-    position: relative;
-}
-
-.serviceCarousel .owl-prev {
-    position: absolute;
-    left: -5%;
-    top: 40%;
-    transform: translateY(-50%);
-}
-
-.serviceCarousel .owl-next {
-    position: absolute;
-    right: -5%;
-    top: 40%;
-    transform: translateY(-50%);
-}
-
-.topServiceCard {
-    padding: 0 20px;
-}
-
-.serviceImageWrap {
-    position: relative;
-    padding-top: 50%;
-}
-
-.serviceImageWrap img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.serviceContentWrap {
-    margin-top: 16px;
-}
-
-.topServiceCardTitle {
-    color: var(--Black);
-    font-family: Lexend;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-}
-
-.topServiceSection {
-    margin: 80px 0 120px 0;
-}
-
-.serviceLocationCard {
-    padding: 0 20px;
-    position: relative;
-    margin-bottom: 90px;
-}
-
-.serviceLocationCardContent {
-    background-color: #fff;
-    padding: 16px 15px 15px 0;
-    position: absolute;
-    left: 20px;
-    bottom: -20%;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.serviceLocationTitle {
-    color: var(--Black);
-    font-family: Lexend;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-}
-
-.serviceLocationPhone {
-    color: var(--Black);
-    font-family: Lexend;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 24px;
-}
-
-.serviceLocationPhone:hover {
-    color: var(--Black);
-}
-
-.serviceLocationMapWrap {
-    min-height: 300px;
-}
-
-.serviceLocationMapWrap iframe {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    min-height: 300px;
-}
-
 .serviceFeatureSection {
     padding: 100px 0 80px 0;
     background-color: #FAFAFA;
@@ -3136,7 +3031,7 @@ a:hover {
 }
 
 .partsTextInnerWrap {
-    max-width:520px;
+    max-width: 520px;
 }
 
 .partsSection {
@@ -3156,25 +3051,24 @@ a:hover {
     margin-bottom: 20px;
     background: #FFF;
     cursor: pointer;
-    border-radius: 30px;
-    border: 2px solid var(--Blue-2, #1892AA);
+    border: 2px solid var(--Navy);
     background: var(--White, #FFF);
 }
 
 .infoTabName h4 {
-    color: var(--Black);
-    font-family: Lexend;
+    color: var(--Navy);
+    font-family: "SF Pro";
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 590;
     line-height: 24px;
+    letter-spacing: 0.72px;
 }
 
 .tabsContent {
     padding: 40px 40px 79px 40px;
-    border-radius: 16px;
-    border: 1px solid #EEE;
-    background-color: #FAFAFA;
+    border: 1px solid #283C5E33;
+    background-color: #EEEEEE33;
 }
 
 .tabsDetailsHeader {
@@ -3242,6 +3136,7 @@ a:hover {
     padding-top: 44%;
     margin-top: 20px;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .tabsDetailImageWrap img {
@@ -3254,12 +3149,13 @@ a:hover {
 }
 
 .smallHeading {
-    color: var(--Blue-2);
-    font-family: Lexend;
-    font-size: 18px;
+    color: var(--Navy);
+    font-family: "SF Pro Medium";
+    font-size: 24px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
+    font-weight: 590;
+    line-height: 32px;
+    letter-spacing: 0.48px;
 }
 
 .mobileTabSection {
@@ -3282,8 +3178,7 @@ a:hover {
 }
 
 .mobileServicesCard {
-    border-radius: 30px;
-    border: 1px solid var(--Black);
+    border: 1px solid #D9D9D9;
     background: var(--White);
     padding: 15px 24px;
     margin-bottom: 16px;
@@ -3314,7 +3209,7 @@ a:hover {
 }
 
 .mobileServicesCard.activeMobileService {
-    border: 1px solid #1892AA;
+    border: 1px solid #283C5E;
 }
 
 .mobileServicesCard .mobileServiceDropIcon {
@@ -4711,10 +4606,6 @@ a:hover {
         align-items: center;
     }
 
-    .topServiceSection {
-        margin: 40px 0 60px 0;
-    }
-
     .tabsSec {
         margin: 40px auto;
     }
@@ -4856,6 +4747,15 @@ a:hover {
     .homeLocationTitle {
         font-size: 20px;
         line-height: 24px;
+    }
+
+    .newsLetterFormWrapper .formFieldWrap{
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .newsLetterFormWrapper .formField{
+        width: 100%;
     }
 }
 
