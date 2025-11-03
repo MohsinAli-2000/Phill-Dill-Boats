@@ -4469,6 +4469,65 @@ a:hover {
 
 /* no event page css ends here */
 
+/* special listing page css starts here */
+.specialListingPageWrap {
+    margin: 64px auto 120px auto;
+}
+
+.currentSpecialCard {
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.currentSpecialImageWrap {
+    position: relative;
+    padding-top: 51%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.currentSpecialImageWrap img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.currentSpecialContentWrap {
+    margin-top: 16px;
+}
+
+.currentSpecialCardTitle {
+    color: var(--Navy);
+    font-family: "SF Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+    margin-bottom: 8px;
+}
+
+.currentSpecialCardPara {
+    color: #222;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* special listing page css ends here */
+
 @media(max-width: 1700px) {
     .desktopHeader {
         padding: 20px 40px 21px 40px;
