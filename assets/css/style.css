@@ -1545,7 +1545,6 @@ a:hover {
 }
 
 .footerSiteMapSection {
-    background-color: #FAFAFA;
     padding: 80px 0;
 }
 
@@ -1620,7 +1619,6 @@ a:hover {
 }
 
 .discalimerSection {
-    background-color: #FAFAFA;
     padding: 64px 0 80px 0;
     border-top: 1px solid #D9D9D9;
 }
@@ -2000,6 +1998,38 @@ a:hover {
     opacity: 0.6;
 }
 
+.homeSpecialOfferCarousel {
+    position: relative;
+}
+
+.homeSpecialOfferCarousel .owl-prev {
+    position: absolute;
+    top: 25%;
+    left: -20px;
+}
+
+.homeSpecialOfferCarousel .owl-next {
+    position: absolute;
+    top: 25%;
+    right: -20px;
+}
+
+.homeEventCarousel {
+    position: relative;
+}
+
+.homeEventCarousel .owl-prev {
+    position: absolute;
+    top: 30%;
+    left: -20px;
+}
+
+.homeEventCarousel .owl-next {
+    position: absolute;
+    top: 30%;
+    right: -20px;
+}
+
 .newArrivalBeforeLine {
     position: relative;
 }
@@ -2084,6 +2114,8 @@ a:hover {
 .homeSpecialImageWrap {
     position: relative;
     padding-top: 50%;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .homeSpecialImageWrap img {
@@ -2167,6 +2199,8 @@ a:hover {
 .homeEventImageWrap {
     position: relative;
     padding-top: 50%;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .homeEventImageWrap img {
@@ -2217,6 +2251,7 @@ a:hover {
 .homeAboutImageWrap {
     position: relative;
     padding-top: 66%;
+    height: 100%;
 }
 
 .homeAboutImageWrap img {
@@ -4795,14 +4830,6 @@ a:hover {
         letter-spacing: 0px;
     }
 
-    .homeEventCarousel .owl-prev {
-        left: 0;
-    }
-
-    .homeEventCarousel .owl-next {
-        right: 0;
-    }
-
     .serviceCarousel .owl-next {
         right: 0;
     }
@@ -4840,6 +4867,10 @@ a:hover {
         display: none;
     }
 
+    .homeSpecialsHeadingAndBtnWrap {
+        width: 100%;
+    }
+
     .mobileHeader {
         display: block;
     }
@@ -4863,7 +4894,7 @@ a:hover {
     }
 
     .marineDifferenceSection {
-        margin: 60px 0 40px 0;
+        margin: 64px 0 40px 0;
     }
 
     .marineDifferenceSection {
@@ -4933,7 +4964,7 @@ a:hover {
     }
 
     .promiseSection {
-        margin-bottom: 40px;
+        margin: 64px 0;
     }
 
     .locationMapAndAddressSection {
@@ -5018,10 +5049,6 @@ a:hover {
         margin-bottom: 42px;
     }
 
-    .newArrivalCarouselWrap {
-        margin-left: 5%;
-    }
-
     .headerContent {
         left: 50%;
         bottom: 20%;
@@ -5051,11 +5078,51 @@ a:hover {
         margin: 40px 0 64px 0;
     }
 
+    .homeEventSection {
+        margin-bottom: 64px;
+    }
+
+    .homeAboutTextSection {
+        padding: 40px 15px 52px 15px;
+    }
+
+    .otherPagesLinkSection {
+        margin: 40px 0 64px 0;
+    }
+
+    .largeHeading{
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .newsLetterSection{
+        padding: 40px 0 52px 0;
+    }
+
+    .secondaryWhiteHeading{
+        font-size: 28px;
+        line-height: 36px;
+    }
+
 }
 
 @media(max-width: 767px) {
     .homeLocationCard {
         padding: 0 8px;
+    }
+
+    .promiseImageWrap {
+        margin: 0 10px;
+    }
+
+    .promiseTextWrap {
+        margin: 0 10px;
+    }
+
+    .homeSpecialsHeadingAndBtnWrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
     }
 }
 
@@ -5097,5 +5164,9 @@ a:hover {
 @media(max-width: 400px) {
     .mobileLogoWrap {
         max-width: 140px;
+    }
+
+    .mobileTopBar{
+        padding: 8px 15px;
     }
 }

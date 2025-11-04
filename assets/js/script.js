@@ -141,19 +141,23 @@ $(document).ready(function () {
             loop: true,
             margin: 20,
             nav: false,
+             navText: ['<img src="./assets/images/home/mobile-prev-arrow.webp" alt="prev"/>', '<img src="./assets/images/home/mobile-next-arrow.webp" alt="next"/>'],
             dots: false,
             smartSpeed: 600,
             center: true,
             slideBy: 1, // stays 1
             responsive: {
                 0: {
-                    items: 1.3
+                    items: 1,
+                    nav: true,
                 },
-                600: {
-                    items: 1.5
+                576: {
+                    items: 1.5,
+                    nav: false,
                 },
                 1000: {
-                    items: 1.5
+                    items: 1.5,
+                    nav: false,
                 }
             },
             onInitialized: fixDotSkipping,
@@ -169,12 +173,13 @@ $(document).ready(function () {
             dots: false,
             responsive: {
                 0: {
-                    items: 1.4
+                    items: 3,
+                    margin: 4,
                 },
                 600: {
-                    items: 3
+                    items: 3                    
                 },
-                1000: {
+                767: {
                     items: 6
                 }
             }
@@ -186,19 +191,24 @@ $(document).ready(function () {
             loop: true,
             margin: 20,
             nav: false,
+            nav: false,
+             navText: ['<img src="./assets/images/home/mobile-prev-arrow.webp" alt="prev"/>', '<img src="./assets/images/home/mobile-next-arrow.webp" alt="next"/>'],
             dots: false,
             smartSpeed: 600,
             center: true,
             slideBy: 1,
             responsive: {
                 0: {
-                    items: 1.3
+                    items: 1,
+                    nav: true,
                 },
-                600: {
-                    items: 1.5
+                576: {
+                    items: 1.5,
+                    nav: false,
                 },
                 1000: {
-                    items: 1.5
+                    items: 1.5,
+                    nav: false,
                 }
             },
             onInitialized: fixDotSkipping,
@@ -214,7 +224,7 @@ $(document).ready(function () {
             dots: false,
             responsive: {
                 0: {
-                    items: 1.1,
+                    items: 1,
                 },
                 600: {
                     items: 1.5,
