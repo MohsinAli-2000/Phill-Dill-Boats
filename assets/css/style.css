@@ -2192,10 +2192,6 @@ a:hover {
     text-transform: uppercase;
 }
 
-.promiseTextInnerWrap {
-    max-width: 420px;
-}
-
 .homeEventImageWrap {
     position: relative;
     padding-top: 50%;
@@ -2311,9 +2307,6 @@ a:hover {
 
 
 
-
-
-
 /* home page css ends here */
 
 /* pro shop page css starts here */
@@ -2321,6 +2314,7 @@ a:hover {
     position: relative;
     padding-top: 75%;
     min-height: 400px;
+    height: 100%;
 }
 
 .commonImageWrap img {
@@ -2341,7 +2335,7 @@ a:hover {
 
 .commonTextWrapWithColorBg {
     background-color: var(--Navy);
-    padding: 0 15px;
+    padding: 30px 15px 0 15px;
 }
 
 .commonTextInnerWrap {
@@ -2533,7 +2527,7 @@ a:hover {
 .typicalCoveragesWrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
     margin-top: 24px;
 }
@@ -3855,6 +3849,22 @@ a:hover {
     letter-spacing: -0.48px;
 }
 
+.serviceSpecialImageWrap {
+    position: relative;
+    padding-top: 40%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.serviceSpecialImageWrap img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* repower page ends starts here */
 
 /* blog listing page css starts here */
@@ -3962,7 +3972,7 @@ a:hover {
 }
 
 .checkboxItem input:checked {
-    background-color: var(--Blue-1);
+    background-color: var(--Navy);
 }
 
 .checkboxItem input:checked::after {
@@ -4002,12 +4012,13 @@ a:hover {
 }
 
 .blogListingCardTitle {
-    color: var(--Black);
-    font-family: Lexend;
+    color: var(--Navy);
+    font-family: "SF Pro";
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 590;
     line-height: 32px;
+    letter-spacing: 0.48px;
 }
 
 .blogListingCardPara {
@@ -4020,12 +4031,14 @@ a:hover {
 }
 
 .blogDetailBtn {
-    color: var(--Blue-2);
-    font-family: Lexend;
+    color: var(--Red);
+    font-family: "SF Pro";
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     text-transform: uppercase;
     display: inline-flex;
     flex-wrap: wrap;
@@ -4035,6 +4048,16 @@ a:hover {
 
 .blogDetailBtn:hover {
     color: var(--Blue-2);
+}
+
+.blogColorTag {
+    color: var(--Navy);
+    font-family: "SF Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 860;
+    line-height: 28px;
+    text-transform: uppercase;
 }
 
 .noOfBlogs {
@@ -4728,6 +4751,10 @@ a:hover {
     .centralNavLink {
         letter-spacing: 0.4px;
     }
+
+    .blog-details-container {
+        gap: 40px;
+    }
 }
 
 
@@ -4760,6 +4787,11 @@ a:hover {
 @media (max-width: 1440px) {
     .desktopHeader {
         padding: 20px 15px 21px 15px;
+    }
+
+    .marineInsuranceHeaderContent {
+        left: 5%;
+        bottom: 30%;
     }
 
     .newArrivalTitle {
@@ -4844,6 +4876,14 @@ a:hover {
 
     .homeBrandLogosContainer {
         gap: 40px;
+    }
+
+    .brandCarousel .owl-prev{
+        left: 0;
+    }
+
+    .brandCarousel .owl-next{
+        right: 0;
     }
 }
 
@@ -5030,7 +5070,7 @@ a:hover {
     }
 
     .commonHeaderSection {
-        min-height: 400px;
+        min-height: 450px;
     }
 
     .typicalCoverageSection {
@@ -5133,6 +5173,68 @@ a:hover {
         margin: 64px 0;
     }
 
+    .weBuySection {
+        margin: 64px 0 64px 0;
+    }
+
+    .promiseTextInnerWrap {
+        max-width: unset;
+    }
+
+    .noEventCardSection {
+        margin-bottom: 64px;
+    }
+
+    .repowerServiceSpecialSection {
+        margin: 64px 0;
+    }
+
+    .specialListingPageWrap {
+        margin: 64px auto 60px auto;
+    }
+
+    .specialDetaisHeaderSection {
+        margin: 64px 0 60px 0;
+    }
+
+    .financingTextAndFormSection {
+        margin-top: 40px;
+    }
+
+    .financeTextInnerWrap {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .financceFormWrapper {
+        margin: 0 auto;
+    }
+
+    .whatInStoreSection {
+        margin: 64px 0 64px 0;
+    }
+
+    .marineInsuranceMainSection{
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .marineInsuranceHeaderContent {
+        left: 50%;
+        bottom: unset;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .textAndImageWithSideTextWrapper{
+        text-align: center;
+    }
+
+    .servicePageTextWrap{
+        text-align: center;
+    }
 }
 
 @media(max-width: 767px) {
@@ -5152,6 +5254,18 @@ a:hover {
         flex-direction: column;
         align-items: center;
         gap: 24px;
+    }
+
+    .blog-details-container {
+        flex-direction: column;
+    }
+
+    .eventContentWrap {
+        text-align: center;
+    }
+
+    .eventLocation {
+        justify-content: center;
     }
 }
 

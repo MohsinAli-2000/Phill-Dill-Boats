@@ -393,6 +393,32 @@ $(document).ready(function () {
 
 
     // ================================++++++++++++++++++++====================
+    // event listing page code starts here
+    if ($('.event-gallery-carousel').length) {
+        $('.event-gallery-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2.4,
+                    margin: 4,
+                },
+                600: {
+                    items: 3.1 ,                   
+                },
+                767: {
+                    items: 4,
+                }
+            }
+        });
+    }
+    // event listing page ends starts here
+    // ================================++++++++++++++++++++====================
+
+
+    // ================================++++++++++++++++++++====================
     // event detail page code starts here
     if ($('.eventDetailsCarousel').length) {
         $('.eventDetailsCarousel').owlCarousel({
