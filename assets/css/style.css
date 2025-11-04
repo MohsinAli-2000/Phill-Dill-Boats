@@ -4943,7 +4943,7 @@ a:hover {
     }
 
     .partsSection {
-        margin: 40px 0;
+        margin: 60px 0;
     }
 
     .formSection {
@@ -5090,18 +5090,47 @@ a:hover {
         margin: 40px 0 64px 0;
     }
 
-    .largeHeading{
+    .largeHeading {
         font-size: 40px;
         line-height: 48px;
     }
 
-    .newsLetterSection{
+    .newsLetterSection {
         padding: 40px 0 52px 0;
     }
 
-    .secondaryWhiteHeading{
+    .secondaryWhiteHeading {
         font-size: 28px;
         line-height: 36px;
+    }
+
+    .textAndImageSectionWithSpaceAtSides {
+        margin: 40px 0 64px 0;
+    }
+
+    .partsImageWrap {
+        margin: 0 auto;
+    }
+
+    .contactTextAndFormSection {
+        margin-top: 64px;
+    }
+
+    .contactTextInnerWrapper {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .contactFormWrapper {
+        margin: 0 auto;
+    }
+
+    .contactLocationContentWrap {
+        text-align: center;
+    }
+
+    .serveLocationSection {
+        margin: 64px 0;
     }
 
 }
@@ -5166,7 +5195,7 @@ a:hover {
         max-width: 140px;
     }
 
-    .mobileTopBar{
+    .mobileTopBar {
         padding: 8px 15px;
     }
 }
